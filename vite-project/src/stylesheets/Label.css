@@ -7,6 +7,10 @@
     line-height: normal;
 }
 
+.label-container:hover {
+    cursor: default;
+}
+
 .label-container {
     display: flex;
     gap: 10px;
@@ -31,5 +35,43 @@
 .info-button:hover {
     background-color: #000;
     color: #fff;
+}
+
+.send-button-container {
+    width: 30px;
+    height: 30px;
+    display: flex;
+}
+
+.text-box-area-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 5px;
+    padding-right: 1px;
+    border: 2px solid #000;
+    border-radius: calc(1em + 1vw);
+}
+
+.text-box {
+    border: none;
+    background: none;
+    display: flex;
+    align-items: center;
+    min-width: 32rem;
+    overflow: hidden;
+    resize: none;
+    vertical-align: middle;
+    line-height: 2; /* Adjust for better vertical centering */
+}
+
+.text-box:focus {
+    outline: none; /* Remove the default focus border */
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 

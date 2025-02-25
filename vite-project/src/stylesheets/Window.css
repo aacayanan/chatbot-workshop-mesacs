@@ -1,12 +1,13 @@
 .window{
     display: flex;
-    padding: 4rem;
     max-width: fit-content;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 206px;
     flex-shrink: 0;
+    height: 46vh;
+    padding-left: 6rem;
+    padding-right: 6rem;
 
     border-radius: 15px;
     border: 1px solid #000;
@@ -20,4 +21,21 @@
     height: 100vh;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: none;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Aligns text to the right */
+    padding: 10px 20px; /* Adds spacing */
+    z-index: 10; /* Higher z-level */
+    background: rgba(255, 255, 255, 0.9); /* Optional: Add slight background to separate layers */
+    opacity: 70%;
 }
