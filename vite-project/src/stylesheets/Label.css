@@ -1,8 +1,35 @@
 .label-text {
     color: #000;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 24px;
+    font-size: 36px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
 }
+
+.label-container {
+    display: flex;
+    gap: 10px;
+}
+
+.info-button {
+    border: black 2px solid;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.info-button-container {
+    display: flex;
+    align-items: flex-end;
+    padding: 5px;
+}
+
+.info-button:hover {
+    background-color: #000;
+    color: #fff;
+}
+
