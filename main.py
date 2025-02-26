@@ -16,6 +16,7 @@ def call_gpt():
     load_dotenv(dotenv_path)  # Load environment variables (e.g., API keys) from .env
 
     content = text_box.get(1.0, tk.END)  # Get the user's input from the text box
+    text_box.delete(1.0, tk.END)  # Clear the text box content
 
     client = OpenAI()  # Initialize the OpenAI client
     response = client.chat.completions.create(  # Send a request to the GPT-3.5-turbo model
